@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-04T16:23:52 IST" name="Suite" finished-at="2022-07-04T16:27:15 IST" duration-ms="203438">
+    <groups>
+    </groups>
+    <test started-at="2022-07-04T16:23:52 IST" name="Test" finished-at="2022-07-04T16:26:36 IST" duration-ms="164296">
+      <class name="KiteTest.ValidationKiteUserIDCrossBrowserTesting">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@791f145a]" started-at="2022-07-04T16:23:52 IST" name="launchBrowser" finished-at="2022-07-04T16:25:38 IST" duration-ms="106187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToKiteApp()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@791f145a]" started-at="2022-07-04T16:25:38 IST" name="loginToKiteApp" finished-at="2022-07-04T16:26:13 IST" duration-ms="34262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToKiteApp -->
+        <test-method signature="validateUserID()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@791f145a]" started-at="2022-07-04T16:26:13 IST" name="validateUserID" finished-at="2022-07-04T16:26:17 IST" duration-ms="4306" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //span[@class='user-id']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-UPO9VLV', ip: '192.168.43.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [62921b68-935b-4354-8787-4ed258846a52, findElement {using=xpath, value=//span[@class='user-id']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:debuggerAddress: localhost:57196, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 7612, moz:profile: C:\Users\Mukesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62921b68-935b-4354-8787-4ed258846a52]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@class='user-id']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-UPO9VLV', ip: '192.168.43.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [62921b68-935b-4354-8787-4ed258846a52, findElement {using=xpath, value=//span[@class='user-id']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:debuggerAddress: localhost:57196, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 7612, moz:profile: C:\Users\Mukesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62921b68-935b-4354-8787-4ed258846a52
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.getText(Unknown Source)
+at KitePOMUsingTestNG.KiteHomePage.ActualUId(KiteHomePage.java:45)
+at KiteTest.ValidationKiteUserIDCrossBrowserTesting.validateUserID(ValidationKiteUserIDCrossBrowserTesting.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserID -->
+        <test-method is-config="true" signature="logOutFromKiteApp()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@791f145a]" started-at="2022-07-04T16:26:17 IST" name="logOutFromKiteApp" finished-at="2022-07-04T16:26:25 IST" duration-ms="8231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromKiteApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@791f145a]" started-at="2022-07-04T16:26:25 IST" name="closeBrowser" finished-at="2022-07-04T16:26:36 IST" duration-ms="10893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- KiteTest.ValidationKiteUserIDCrossBrowserTesting -->
+    </test> <!-- Test -->
+    <test started-at="2022-07-04T16:26:37 IST" name="Test1" finished-at="2022-07-04T16:27:15 IST" duration-ms="38462">
+      <class name="KiteTest.ValidationKiteUserIDCrossBrowserTesting">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@173ed316]" started-at="2022-07-04T16:26:37 IST" name="launchBrowser" finished-at="2022-07-04T16:27:07 IST" duration-ms="30542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToKiteApp()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@173ed316]" started-at="2022-07-04T16:27:07 IST" name="loginToKiteApp" finished-at="2022-07-04T16:27:09 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToKiteApp -->
+        <test-method signature="validateUserID()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@173ed316]" started-at="2022-07-04T16:27:09 IST" name="validateUserID" finished-at="2022-07-04T16:27:12 IST" duration-ms="3132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserID -->
+        <test-method is-config="true" signature="logOutFromKiteApp()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@173ed316]" started-at="2022-07-04T16:27:12 IST" name="logOutFromKiteApp" finished-at="2022-07-04T16:27:13 IST" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromKiteApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:KiteTest.ValidationKiteUserIDCrossBrowserTesting@173ed316]" started-at="2022-07-04T16:27:13 IST" name="closeBrowser" finished-at="2022-07-04T16:27:15 IST" duration-ms="1958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- KiteTest.ValidationKiteUserIDCrossBrowserTesting -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
